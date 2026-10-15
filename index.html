@@ -97,7 +97,9 @@
         canvas.style.height = "600px";
       }
 
-      canvas.style.background = "url('" + buildUrl + "/ScuffedPlatformer 1.9.6 - WebGL.jpg') center / cover";
+      // The Unity template pointed at "ScuffedPlatformer 1.9.6 - WebGL.jpg" as a loading
+      // background, but that file was never exported to Build/, so it only produced a 404.
+      // canvas.style.background = "url('" + buildUrl + "/ScuffedPlatformer 1.9.6 - WebGL.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
